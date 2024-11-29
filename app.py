@@ -131,15 +131,15 @@ def main():
 
             # Show additional information based on soil type
             if soil_type == "Black Soil":
-                st.markdown(open("black.html").read(), unsafe_allow_html=True)
+                st.markdown(open("templates/black.html").read(), unsafe_allow_html=True)
             elif soil_type == "Sandy Soil":
-                st.markdown(open("sandy.html").read(), unsafe_allow_html=True)
+                st.markdown(open("templates/sandy.html").read(), unsafe_allow_html=True)
             elif soil_type == "Loamy Soil":
-                st.markdown(open("loamy.html").read(), unsafe_allow_html=True)
+                st.markdown(open("templates/loamy.html").read(), unsafe_allow_html=True)
             elif soil_type == "Yellow Soil":
-                st.markdown(open("yellow.html").read(), unsafe_allow_html=True)
+                st.markdown(open("templates/yellow.html").read(), unsafe_allow_html=True)
             else:  # Cinder Soil
-                st.markdown(open("cinder.html").read(), unsafe_allow_html=True)
+                st.markdown(open("templates/cinder.html").read(), unsafe_allow_html=True)
 
 # Run the Streamlit app
 if __name__ == "__main__":
